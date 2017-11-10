@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="smiles">
+        <item>@drawable/smilefeliz</item>
+        <item>@drawable/smilepreocupado</item>
+        <item>@drawable/smiletriste</item>
+    </array>
+</resources>

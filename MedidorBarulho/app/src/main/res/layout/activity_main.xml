@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/fundo"
     tools:context="com.example.daniellegomes.medidorbarulho.MainActivity">
-
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,6 +18,7 @@
             android:layout_height="wrap_content"
             android:textSize="9pt"
             android:textStyle="bold"
+            android:textColor="@color/colorSnow"
             android:text="Tempo de Medição"
             />
 
@@ -41,6 +42,7 @@
             android:layout_height="wrap_content"
             android:text="0"
             android:textStyle="bold"
+            android:textColor="@color/colorSnow"
             android:textSize="9pt"
             android:id="@+id/txtValorTempo"
             />
@@ -49,13 +51,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="min"
+            android:textColor="@color/colorSnow"
             android:textSize="9pt"
             />
 
 
     </LinearLayout>
-
-
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -68,6 +69,7 @@
             android:layout_height="wrap_content"
             android:textSize="9pt"
             android:textStyle="bold"
+            android:textColor="@color/colorSnow"
             android:text="Barulho Máximo"
             />
 
@@ -85,10 +87,18 @@
         android:layout_height="wrap_content"
         android:text="0"
         android:textStyle="bold"
+        android:textColor="@color/colorSnow"
         android:layout_gravity="center_horizontal"
         android:textSize="9pt"
         android:id="@+id/txtValor"
         />
 
+
+    <ImageView
+        android:id="@+id/smile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/smiletriste" />
 
 </LinearLayout>
