@@ -4,4 +4,7 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorSnow">#FFFAFA</color>
+    <color name="colorFeliz">#87CEFA</color>
+    <color name="colorPreocupada">#F4A460</color>
+    <color name="colorTriste">#CD5C5C</color>
 </resources>

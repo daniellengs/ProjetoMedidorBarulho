@@ -55,8 +55,8 @@
             android:textSize="9pt"
             />
 
-
     </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -76,29 +76,94 @@
         <SeekBar
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/skbValor"
-            android:max="150"
+            android:id="@+id/skbValorLimite"
+            android:max="100"
             />
 
     </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="0"
-        android:textStyle="bold"
-        android:textColor="@color/colorSnow"
-        android:layout_gravity="center_horizontal"
-        android:textSize="9pt"
-        android:id="@+id/txtValor"
-        />
-
-
-    <ImageView
-        android:id="@+id/smile"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:src="@drawable/smiletriste" />
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textStyle="bold"
+            android:textColor="@color/colorSnow"
+            android:textSize="9pt"
+            android:id="@+id/txtValorLimite"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="horizontal"
+
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/smile"
+            android:layout_width="185dp"
+            android:layout_height="214dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.20"
+            android:src="@drawable/smilefeliz" />
+
+        <com.github.lzyzsd.circleprogress.DonutProgress
+            android:id="@+id/donut_progress"
+            android:layout_width="116dp"
+            android:layout_height="114dp"
+            android:layout_margin="20pt"
+            android:layout_gravity="center_vertical"
+            app:donut_unfinished_color="#FFFFFF"
+            app:donut_finished_color="@color/colorAccent"
+            app:donut_show_text="true"
+            app:donut_suffix_text=""
+            app:donut_text_color="@color/colorSnow"
+            app:donut_text_size="22dp"
+            app:donut_progress="0"
+            app:donut_max="100" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="60dp"
+        android:orientation="horizontal"
+
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/imageViewPlay"
+            android:onClick="iniciarMedicao"
+            android:layout_width="wrap_content"
+            android:layout_height="145dp"
+            android:layout_margin="0dp"
+            android:layout_marginLeft="50pt"
+            android:layout_weight="0.20"
+            android:src="@drawable/play" />
+
+
+        <ImageView
+            android:id="@+id/imageStop"
+            android:onClick="pararMedicao"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:src="@drawable/stop" />
+
+    </LinearLayout>
+
 
 </LinearLayout>
