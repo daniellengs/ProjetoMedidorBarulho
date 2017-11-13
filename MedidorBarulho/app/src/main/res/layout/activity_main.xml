@@ -134,36 +134,13 @@
     </LinearLayout>
 
 
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="90dp"
-        android:layout_marginRight="60dp"
-        android:orientation="horizontal"
-
-        android:weightSum="1">
-
-        <ImageView
-            android:id="@+id/imageViewPlay"
-            android:onClick="iniciarMedicao"
-            android:layout_width="wrap_content"
-            android:layout_height="145dp"
-            android:layout_margin="0dp"
-            android:layout_marginLeft="50pt"
-            android:layout_weight="0.20"
-            android:src="@drawable/play" />
-
-
-        <ImageView
-            android:id="@+id/imageStop"
-            android:onClick="pararMedicao"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:src="@drawable/stop" />
-
-    </LinearLayout>
+    <ImageView
+        android:id="@+id/imageViewPlay"
+        android:layout_marginLeft="50pt"
+        android:layout_width="167dp"
+        android:layout_height="145dp"
+        android:onClick="iniciarMedicao"
+        android:background="@drawable/play"/>
 
 
 </LinearLayout>

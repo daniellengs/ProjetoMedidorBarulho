@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity implements AlarmManager.OnAl
 
     private int limiteBarulho = 0;
     private int tempoMedicao = 0;
+    private int memorizador = 0;
 
     private boolean MODE_MESURING = false;
 
@@ -82,6 +83,20 @@ public class MainActivity extends AppCompatActivity implements AlarmManager.OnAl
         //registrarAlarmReceiver();
 
         MODE_MESURING = false;
+
+        final ImageView meuplay = (ImageView) findViewById(R.id.imageViewPlay);
+        meuplay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (memorizador == 0) {
+                    meuplay.setBackgroundResource(R.drawable.stop);
+                    memorizador = 1;
+                } else {
+                    memorizador = 0;
+                    meuplay.setBackgroundResource(R.drawable.play);
+                }
+            }
+        });
 
     }
 
